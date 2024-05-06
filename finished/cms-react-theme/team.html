@@ -1,0 +1,29 @@
+<!--
+    templateType: page
+    label: CMS React Theme from HubSpot Academy
+    isAvailableForNewContent: true
+-->
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>{{ content.html_title }}</title>
+    <meta name="description" content="{{ content.meta_description }}">
+    {{ standard_header_includes }}
+  </head>
+  <body>
+     {# Can also use the module tag:
+        {% module "Our Team Members" title="Our Team Members" 
+          path="@projects/hello-world-project/hello-world-app/components/modules/TeamModule" 
+        %} 
+     #}
+
+    {% dnd_area "dnd_area", class="main" %}
+      {% dnd_section %}
+        {% dnd_module extra_classes="team-react-module", title="Our Team Members", path="@projects/hello-world-project/hello-world-app/components/modules/TeamModule" %}
+        {% end_dnd_module %}
+      {% end_dnd_section %}
+    {% end_dnd_area %}
+    {{ standard_footer_includes }}
+  </body>
+</html>
