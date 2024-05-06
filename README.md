@@ -20,18 +20,18 @@ This section will take you through the process of deploying your first JS render
 First, clone this repository:
 
 ```
-git clone https://github.com/HubSpot-Academy/a-quickstart-guide-to-react-in-the-cms.git
+git clone https://github.com/HubSpot-Academy/quickstart-guide-to-react-in-cms.git
 ```
 
 This repo has a few significant directories:
 
-- `cms-world-theme/`: Some example HubL templates that refer to JS components elsewhere
+- `cms-react-theme/`: Some example HubL templates that refer to JS components elsewhere
 - `cms-react-project/`: The HubSpot project folder
 - `cms-react-project/cms-react-app`: A package inside of the project that can contain React components (a project can contain many different package types, like [CRM apps](https://developers.hubspot.com/docs/platform/create-custom-cards-with-projects), etc)
 
 ### 2. Install dependencies
 
-Open your terminal and change into the repo root folder (`a-quickstart-guide-to-react-in-the-cms`) if you are not already there.
+Open your terminal and change into the repo root folder (`quickstart-guide-to-react-in-cms`) if you are not already there.
 
 Then run `npm install`. This will install all the local development tools you need—like `@hubspot/cli` and `@hubspot/cms-dev-server`—and the dependencies used inside cms-react-app/ JS component code.
 
@@ -42,7 +42,7 @@ Run `hs init` from the root of the repository to configure it to upload to your 
 > **Warning**
 > If you are using an existing access key from a previous call to `hs init` or `hs auth`, you will need to deactivate and regenerate the access key to include new scopes necessary for local CMS React development.
 
-Next double-check you are still in `a-quickstart-guide-to-react-in-the-cms/` and run `npm run deploy` to upload the CMS React project to your HubSpot account. Once the project is uploaded, built, and deployed, you will be able to add the modules and partials to your HubSpot templates.
+Next double-check you are still in `quickstart-guide-to-react-in-cms/` and run `npm run deploy` to upload the CMS React project to your HubSpot account. Once the project is uploaded, built, and deployed, you will be able to add the modules and partials to your HubSpot templates.
 
 From the repository root, run `npm run upload:hubl` to upload the corresponding example HubL files to your account.
 
@@ -61,7 +61,7 @@ Also for easier access, you can visit http://hslocal.net:3000 to see an index pa
 In addition to direct local previews of JS partials and modules, you can preview your local JS component inside of live HubL-rendered pages. To do that you first need to create a page:
 
 - Go to Control Center
-- Click “Create”, ”Create Landing page”, write a page name, and click “Create page”..
+- Click “Create”, ”Create Website page”, write a page name, and click “Create page”..
 - Switch your active theme to “CMS React Theme - HubSpot Academy Quickstart Lesson”, and select one of the CMS React theme templates
 - Give that page a name in the settings tab, then publish that page and preview it.
 
